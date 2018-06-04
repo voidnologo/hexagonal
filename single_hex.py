@@ -2,16 +2,15 @@ from collections import namedtuple
 from decimal import Decimal
 import math
 
+# STRIGHT FORWARD, but sin(180) is totally wrong due to floating point representation
 
 Point = namedtuple('Point', ['x', 'y'])
 
 
 def hex_corner(center, size, i):
-    angle_deg = 60 * i
-    angle_rad = math.pi / 180 * angle_deg
+    angle_rad = math.radians(60 * i)
     print('<>' * 10)
     print(i)
-    print(angle_deg)
     print(angle_rad)
     print(math.cos(angle_rad))
     print(math.sin(angle_rad))
@@ -28,6 +27,8 @@ for side in range(6):
 
 #  ====================================================================================================
 print('<<<<>>>>'*10)
+
+# Works correctly, but not as flexible
 
 sin = {
     0: Decimal('0'),
