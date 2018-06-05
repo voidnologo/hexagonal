@@ -91,3 +91,6 @@ if __name__ == '__main__':
 
 # https://groups.google.com/forum/#!topic/kivy-users/nb77BpCWl2U
 # https://stackoverflow.com/questions/20460965/centering-an-object-in-kivy
+
+# MESH
+# https://kivy.org/docs/examples/gen__canvas__mesh__py.html
